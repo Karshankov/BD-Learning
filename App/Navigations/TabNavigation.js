@@ -1,7 +1,7 @@
 import { View, Text } from 'react-native';
 import React from 'react';
-import MyCourse from '../Screen/MyCourse';
-import LeaderBoard from '../Screen/LeaderBoard';
+import LabsScreen from '../Screen/LabsScreen';
+// import LeaderBoard from '../Screen/LeaderBoard';
 import Quiz from '../Screen/quiz/homeQuiz';
 import HomeScreen from '../Screen/HomeScreen';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -17,7 +17,7 @@ export default function TabNavigation() {
   return (
     <Tab.Navigator screenOptions={{ headerShown: false }}>
       <Tab.Screen
-        name="Домашняя"
+        name="Лекции"
         component={HomeScreenNavigation}
         options={{
           tabBarIcon: ({ color, size }) => (
@@ -26,15 +26,15 @@ export default function TabNavigation() {
         }}
       />
       <Tab.Screen
-        name="Лекции"
-        component={MyCourse}
+        name="Лабораторные"
+        component={LabsScreen}
         options={{
           tabBarIcon: ({ color, size }) => (
             <FontAwesome5 name="book-open" size={size} color={color} />
           ),
         }}
       />
-      <Tab.Screen
+      {/* <Tab.Screen
         name="Рейтинг"
         component={LeaderBoard}
         options={{
@@ -42,7 +42,7 @@ export default function TabNavigation() {
             <MaterialIcons name="leaderboard" size={size} color={color} />
           ),
         }}
-      />
+      /> */}
       <Tab.Screen
         name="Тесты"
         component={Quiz}

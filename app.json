@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "RMP-Learning",
-    "scheme": "RMP-Learning",
-    "slug": "RMP-Learning",
+    "name": "BD-Learning",
+    "scheme": "BD-Learning",
+    "slug": "BD-Learning",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

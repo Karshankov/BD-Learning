@@ -46,7 +46,7 @@ export default function DetailSection({
           <OptionItem icon={'md-time-outline'} value={course.time} />
         </View>
 
-        <OptionItem icon={'person-circle-outline'} value={'Пилецкая С.А'} />
+        <OptionItem icon={'person-circle-outline'} value={'Кухаренко С.Н'} />
       </View>
       <View>
         <Text

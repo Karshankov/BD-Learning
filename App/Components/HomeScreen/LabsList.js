@@ -7,7 +7,7 @@ import { Ionicons } from '@expo/vector-icons';
 import CourseItem from './CourseItem';
 import { useNavigation } from '@react-navigation/native';
 
-export default function CourseList({ courseLevel }) {
+export default function LabsList({ courseLevel }) {
   const navigation = useNavigation();
   const [CourseList, setCourseList] = useState([]);
 
@@ -34,17 +34,18 @@ export default function CourseList({ courseLevel }) {
       <FlatList
         data={CourseList}
         key={CourseList.id}
-        horizontal={true}
+        horizontal={false}
         showsHorizontalScrollIndicator={false}
         renderItem={({ item }) => (
           <TouchableOpacity
+            style={{marginTop:20,}}
             onPress={() =>
               navigation.navigate('course-detail', {
                 course: item,
               })
             }
           >
-            <CourseItem item={item} />
+            <CourseItem item={item}  />
           </TouchableOpacity>
         )}
       />

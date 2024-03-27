@@ -1,6 +1,6 @@
 import { View, Text, Image, TouchableOpacity } from 'react-native';
 import React from 'react';
-import android from '../../assets/images/android.jpg';
+import db from '../../assets/images/db.png';
 import Colors from '../Utils/Colors';
 import google from '../../assets/images/google.png';
 import { Touchable } from 'react-native';
@@ -30,11 +30,11 @@ export default function LoginScreen() {
   }, []);
 
   return (
-    <View style={{ display: 'flex', alignItems: 'center' }}>
+    <View style={{ display: 'flex', alignItems: 'center', backgroundColor: Colors.WHITE }}>
       <Image
-        source={android}
+        source={db}
         style={{
-          width: 650,
+          width: 270,
           height: 500,
           resizeMode: 'contain',
         }}
@@ -57,7 +57,8 @@ export default function LoginScreen() {
             marginTop: 20,
           }}
         >
-          РМП
+          Базы данных
+          и СУБД
         </Text>
         <Text
           style={{
